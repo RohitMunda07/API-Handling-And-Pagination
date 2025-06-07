@@ -40,10 +40,11 @@ function FeatchedData() {
     return (
         <>
             {loading ?
-                'loading...' :
+                <span style={{color: "black", fontSize: "5rem"}}>loading...</span>
+                :
 
                 <div>
-                    <h1 style={{color: "black"}}>API Handling</h1>
+                    <h1 style={{ color: "black" }}>API Handling</h1>
                     <section className='section-body'>
                         {products.map((currPro) => {
                             const { id, title, thumbnail, price } = currPro;
